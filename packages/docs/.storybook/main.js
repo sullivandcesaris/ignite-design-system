@@ -1,3 +1,5 @@
+import { mergeConfig } from 'vite';
+
 /** @type { import('@storybook/react-vite').StorybookConfig } */
 const config = {
   stories: ["../src/pages/**/*.mdx", 
@@ -20,7 +22,7 @@ const config = {
       config.base = '/ignite-design-system/'
     }
     return mergeConfig(config, {
-      // Your environment configuration here
+      configType
     });
   },
 };
