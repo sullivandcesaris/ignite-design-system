@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/docs",
+  "name": "@dcesaris-design-system/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -30,10 +30,10 @@
     "vite": "^4.3.8"
   },
   "dependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@dcesaris-design-system/eslint-config": "*",
+    "@dcesaris-design-system/react": "*",
+    "@dcesaris-design-system/tokens": "*",
+    "@dcesaris-design-system/ts-config": "*",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
     "react": "^18.2.0",
