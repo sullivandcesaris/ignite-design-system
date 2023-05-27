@@ -1,5 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, Text, TextInput, TextInputProps } from '@dcesaris-design-system/react'
+import {
+  Box,
+  Text,
+  TextInput,
+  TextInputProps,
+} from '@dcesaris-design-system/react'
 
 export default {
   title: 'Form/Text Input',
@@ -36,5 +41,6 @@ export const Disabled: StoryObj<TextInputProps> = {
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
     prefix: 'cal.com/',
+    placeholder: 'your-username',
   },
 }
