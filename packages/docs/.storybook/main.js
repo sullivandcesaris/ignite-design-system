@@ -1,26 +1,27 @@
-module.exports = {
-  stories: [
-    "../src/pages/**/*.stories.mdx",
-    "../src/stories/**/*.stories.tsx"
+/** @type { import('@storybook/react-vite').StorybookConfig } */
+const config = {
+  stories: ["../src/pages/**/*.mdx", 
+            "../src/stories/**/*.stories.@(js|jsx|ts|tsx)"
   ],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "@storybook/addon-a11y"
   ],
-  framework: "@storybook/react",
-  core: {
-    builder: "@storybook/builder-vite"
+  framework: {
+    name: "@storybook/react-vite",
+    options: {},
   },
-  features: {
-    storyStoreV7: true
+  docs: {
+    autodocs: "tag",
   },
-  viteFinal: (config, { configType }) => {
+  async viteFinal(config, { configType }) {
     if (configType === 'PRODUCTION') {
       config.base = '/ignite-design-system/'
     }
-
-    return config
-  }
-}
+    return mergeConfig(config, {
+      // Your environment configuration here
+    });
+  },
+};
+export default config;
