@@ -1,5 +1,11 @@
 # @dcesaris-design-system/react
 
+## 2.0.2
+
+### Patch Changes
+
+- insert the challenge components
+
 ## 2.0.1
 
 ### Patch Changes
